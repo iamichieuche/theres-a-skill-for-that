@@ -1,6 +1,6 @@
 ---
 name: theres-a-skill-for-that
-description: A craft-first skill advisor for designer-engineers. Reads your project — stack, files, git state, what's being built — and tells you exactly which skill to run right now to improve UI quality, motion, design systems, or product feel. Not a generic task helper. Specifically optimised for people who care about how things look, move, and feel, and want to ship with craft. Use when you don't know which skill to reach for, when something feels off but you can't name it, mid-feature, or pre-launch. Bias is always toward design quality and product craft over infrastructure.
+description: A craft-first skill advisor for designer-engineers. Reads your project — stack, files, git state, what's being built — checks your installed skills and the full skills.sh catalog, then recommends one to three skills to run right now (never more) to improve UI quality, motion, design systems, or product feel. Not a generic task helper. Specifically optimised for people who care about how things look, move, and feel, and want to ship with craft. Use when you don't know which skill to reach for, when something feels off but you can't name it, mid-feature, or pre-launch. Bias is always toward design quality and product craft over infrastructure.
 user-invocable: true
 argument-hint: "[optional: what you're trying to do, or leave blank for full context analysis]"
 ---
@@ -179,3 +179,7 @@ A bad recommendation is:
 - Exhaustive ("here are 15 skills that might help")
 - Vague ("this seems relevant")
 - Overly cautious ("it depends on your goals")
+
+## A note on applying recommendations
+
+Recommending a skill is not the same as guaranteeing its output is correct for every component. When running a skill on a specific piece of UI, validate that each suggestion actually fits before applying it. A technique that works in general (e.g. a pill-morphing entrance animation) can break a specific component that has its own positioning, clipping, or layering constraints. If something looks wrong after applying a recommendation, revert it — don't debug it into submission. The original approach was probably right for that component.
