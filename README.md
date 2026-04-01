@@ -1,24 +1,28 @@
 # theres-a-skill-for-that
 
-An [Agent Skill](https://docs.anthropic.com/en/docs/claude-code/skills) that reads your project and tells you exactly which skill to run next.
+You open a project and your head is already in the work. You're not stopping
+to think "which skill applies here?" You're thinking about the feature. The
+deadline. The thing that feels slightly off but you can't name it yet.
 
-Part of the [Kaizen](https://iamichieuche.github.io/kaizen) skills pack.
+This skill figures that out for you.
 
-## What it does
+Drop it into any project and it reads the room. Your stack, recent git changes,
+what files you've been touching. Then it checks your installed skills and the
+skills.sh catalog and tells you what to actually run.
 
-Reads your project — stack, git history, recent diffs, what you've been working on — checks your installed skills and the full skills.sh catalog, and recommends one to three skills to run right now. Built for designer-engineers who care about how things look, move, and feel.
+It gives you one to three skills. Never more. If one clearly fits, it says one.
+If two work well together it'll say both, tell you why, and which to run first.
 
-It knows the difference between a project that needs motion work and one that needs its design system sorting out. It figures out what phase you're in and gives you a specific answer for right now.
+For designers, builders, developers, and anyone who wants their product to look,
+move, and feel better.
 
-## Installation
+## Install
 
 ```bash
 npx skills add iamichieuche/theres-a-skill-for-that -y -g
 ```
 
 ## Usage
-
-Run it with no arguments for a full project read:
 
 ```
 /theres-a-skill-for-that
@@ -32,16 +36,10 @@ Or give it context:
 /theres-a-skill-for-that push the UI further
 ```
 
-It gives you one to three skills. Never more. Never generic. Always specific to what it found in your project.
-
 ## Works in
 
-- [Claude Code](https://claude.ai/code)
-- [Cursor](https://cursor.com)
-- [Codex](https://openai.com/codex)
-- [Ghostty](https://ghostty.org)
-- [Conductor](https://conductor.build)
-- Any agent that supports the skills format
+Claude Code, Cursor, Codex, Ghostty, Conductor, and any agent that supports
+the skills format.
 
 ## License
 
