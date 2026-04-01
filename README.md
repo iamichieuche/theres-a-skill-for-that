@@ -1,4 +1,6 @@
-# theres-a-skill-for-that
+# There is a skill for that
+
+An [Agent Skill](https://code.claude.com/docs/en/skills) inspired by [skills.sh](https://skills.sh).
 
 You open a project and your head is already in the work. You're not stopping
 to think "which skill applies here?" You're thinking about the feature. The
